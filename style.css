@@ -132,8 +132,8 @@ header .main-content img{
 
 header .card1{
    position: absolute;
-   top: 40%;
-   right: 10%;
+   bottom: 22rem;
+   right: 8.5rem;
    background: rgba(255, 255, 255, 0.103);
    backdrop-filter: blur(10px);
    border: none;
@@ -195,7 +195,99 @@ header .ball{
     background-color: #E6533C;
     border-radius: 50%;
 }
+main{
+    padding: 6.25rem 7rem 7rem 7rem;
+}
+.habits{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 40rem;
+    margin-bottom: 3.5rem;
+}
+.habits h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+.habits p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.7rem;
+}
+.all-circle{
+    display: flex;
+    column-gap: 4rem;
+}
+.all-circle div img{
+    width: 100%;
+    border-radius: 50%;
+}
+.all-circle div h5{
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.all-circle div p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    font-weight: normal;
+    margin-top: 0.4rem;
+    text-align: center;
+}
+.running{
+    margin-top: 8rem;
+    background: rgba(34, 34, 34, 1);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.running .dada{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.motivation{
+    width: 20rem;
+    height: 16rem;
+}
+.motivation h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+.motivation p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 0.8rem;
+}
+.motivation button{
+    padding: 12px 40px 12px 40px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: rgba(230, 83, 60, 1);
+    cursor: pointer;
+}
+.motivation button:hover{
+    background: #e66b59;
+}
+.running-img img{
+    height: 16rem;
+    border-radius: 1rem;
+}
 @media screen and (max-width:576px){
+    *{
+        overflow-x: hidden;
+    }
     header{
         padding: 3rem 1.25rem 0 1.25rem;
         margin: 0;
@@ -219,9 +311,57 @@ header .ball{
     header .describ{
         padding: 0;
         margin: 0;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
     header .main-content img{
         padding: 0;
         margin: 0;
     }
+    header .card1{
+        bottom: 23rem;
+        right: 2rem;
+        backdrop-filter: blur(7px);
+    }
+    header .card2{
+        left: 2rem;
+        bottom: 9rem;
+        backdrop-filter: blur(7px);
+    }
+    .all-circle{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding: 2rem 4rem 2rem 4rem;
+    }
+    .habits{
+        width: 25rem;
+        padding: 0.7rem;
+    }
+    .habits h2{
+        font-size: 2rem;
+    }
+    main{
+        padding: 0;
+        margin: 0;
+    }
+    .dada{
+        flex-direction: column;
+    }
+    .running{
+        margin: 0 1.25rem;
+    }
+    .running .running-img{
+        border-radius: 20px;
+        width: 86%;
+        margin-top: 2rem;
+    } 
+    .motivation{
+        overflow: hidden;
+        height: 17rem;
+    }
+    .running button{
+        width: 100%;
+        margin-top: 1rem;
+    }   
 }
