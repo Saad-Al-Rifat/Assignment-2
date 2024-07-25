@@ -474,7 +474,71 @@ thead th{
     border-radius: 18px;
     padding: 1.4rem 0rem 1.4rem 0rem;
 }
-
+.footer-container{
+   margin: 0 5rem;
+}
+.upper-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 2.5rem;
+}
+footer{
+    background-color: rgb(24, 24, 24);
+    padding-top: 3rem;
+}
+footer hr{
+    color: #4e4a4a;
+}
+.fitness-sec{
+    width: 440px;
+}
+.fitness-sec h1{
+    color: tomato;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.upper-section p{
+    color: rgba(255, 255, 255, 0.438);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.upper-section h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.get-start1 h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem; 
+}
+.get-start2 h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+/* footer ul{
+    list-style: none;
+} */
+footer ul li{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.438);
+    font-weight: 300;
+    font-size: 1.35rem;
+    margin-bottom: 0.8rem;
+}
+.bottom-section p{
+    color: #ffffff70;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 @media screen and (max-width:576px){
     *{
         overflow-x: hidden;
