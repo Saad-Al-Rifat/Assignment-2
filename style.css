@@ -284,6 +284,111 @@ main{
     height: 16rem;
     border-radius: 1rem;
 }
+.calculator{
+	padding-top: 4.5rem;
+}
+.calculator .heading{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 4.5rem;
+}
+.calculator .heading h2{
+	text-align: left;
+	color: white;
+	font-weight: bold;
+	font-size: 2.5rem;
+	margin-bottom: 0.8rem;
+}
+.calculator .heading p{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 0.9rem;
+	font-weight: 300;
+	text-align: left;
+}
+.calculator-table h3{
+	color: white;
+    font-weight: bold;
+	font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+.calculator-table table{
+	border-collapse: collapse;
+	min-width: 21.5rem;
+}
+.main-calculator{
+	background: rgba(34, 34, 34, 1);
+	margin-right: -7rem;
+	margin-left: -7rem;
+	display: flex;
+	padding: 2.5rem 1.4rem;
+}
+th, td{
+	padding: 0.68rem;
+	border-color: rgba(255, 255, 255, 0.5);
+	font-size: 0.97rem;
+	color: white;
+}
+td{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 0.8;
+}
+thead th{
+	text-align: left;
+}
+.foram{
+	display: grid;
+	grid-template-columns: repeat(2, 17.5rem);
+    grid-template-rows: repeat(3, 2.9rem);
+    column-gap: 0.7rem;
+    row-gap: 0.7rem;
+}
+.actual-calc form h3{
+    color: white;
+    font-weight: bold; 
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+.actual-calc form p{
+    color: rgba(255, 255, 255, 0.5); 
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.last-one{
+	grid-column: 1/3;
+}
+.inputs-styles{
+    background-color: rgba(255, 255, 255, 0.164);
+    color: black;
+    border-radius: 5px;
+    border: none;
+    padding-left: 0.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.inputs-placeholders-styles::placeholder{
+    color: black;
+}
+.actual-calc form button{
+    height: 2.9rem;
+    width: 200px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.4rem;
+    background-color: tomato;
+    border-radius: 25px;
+    border: none;
+    margin-top: 1.5rem;
+}
+.actual-calc form button:hover{
+    background-color: #E6533C;
+    cursor: pointer;
+}
+.main-calculator{
+    display: flex;
+    justify-content: space-around;
+}
+
 @media screen and (max-width:576px){
     *{
         overflow-x: hidden;
@@ -364,4 +469,44 @@ main{
         width: 100%;
         margin-top: 1rem;
     }   
+    .calculator{
+		padding: 0;
+		margin: 0;
+	}
+	.calculator .heading{
+		padding: 0;
+		margin: 0;
+		transform: translate(0,0);
+	}
+    .main-calculator{
+        flex-direction: column;
+    }
+    .calculator .heading{
+       margin: auto;
+       padding: 2rem 0.7rem 2rem 0.7rem;
+    }
+    .calculator-table{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .actual-calc form h3{
+        margin-left: 6.5rem;
+        padding-right: 4rem;       
+    }
+    .actual-calc form p{
+        margin-left: 6.5rem;
+        padding-right: 4rem;   
+    }
+    
+    .actual-calc form button{
+        margin-left: 6.5rem;
+    }
+    .foram{
+        display: grid;
+        grid-template-columns: repeat(2, 12rem);
+        grid-template-rows: repeat(3, 2.9rem);
+        column-gap: 0.7rem;
+        row-gap: 0.7rem;
+        margin-left: 6.5rem;
+    } 
 }
