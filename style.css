@@ -388,6 +388,92 @@ thead th{
     display: flex;
     justify-content: space-around;
 }
+.team-mem-head{
+    margin: 4rem 0;
+}
+.team-mem-head h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.team-mem-head p{
+    color: #a78f8f;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+}
+.sizeeee{
+    height: 270px;
+    width: 270px;
+}
+.team-mem-images .trainer1-img{
+    background-image: url(images/trainer1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.team-mem-images .trainer2-img{
+    background-image: url(images/trainer2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.team-mem-images .trainer3-img{
+    background-image: url(images/trainer3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.team-mem-images .trainer4-img{
+    background-image: url(images/trainer4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.team-mem-images .trainer5-img{
+    background-image: url(images/trainer5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.team-mem-images .trainer6-img{
+    background-image: url(images/trainer6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.team-mem-images h4{
+    color: white;
+    font-size: 1.3rem;
+    font-weight:bold; 
+}
+.team-mem-images p{
+    color: gray;
+    font-size: 1rem;
+    font-weight: 350;
+}
+.team-mem-images > div{
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0.3rem;
+    margin: 0 auto;
+}
+.team-mem-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    padding: 1.4rem 0rem 1.4rem 0rem;
+}
 
 @media screen and (max-width:576px){
     *{
@@ -508,5 +594,45 @@ thead th{
         column-gap: 0.7rem;
         row-gap: 0.7rem;
         margin-left: 6.5rem;
-    } 
+    }
+    .team-mem-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-mem-head p{
+        padding:0;
+        margin:0;
+    }
+    .team-mem-head h1{
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+    .team-mem-head{
+        padding: 0;
+        margin: 0;
+    }
+    .team-mem-images{
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 2rem;
+    }
+    .team-mem-images > div{
+        padding: 0;
+        margin: 0 auto;
+    }
+    .team-mem-images p{
+        padding: 0;
+        margin: 0;
+    }
+    .team-mem-images h4{
+        padding: 0;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    .sizeeee{
+        height: 200px;
+        width: 200px;
+    }
 }
